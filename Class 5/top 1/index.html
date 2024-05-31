@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+
+        @keyframes scale_animation {
+            from{
+                scale: 1 1;
+            }
+            
+            to{
+                scale: 3 3;
+            }
+        }
+
+
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon_container{
+            height: 150px;
+            width: 130px;
+            background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 1.5s;
+            animation-name: "scale_animation";
+        }
+        /* .icon_container:hover{
+            background: #ffffff;
+            border: 5px solid aquamarine;
+            scale: 2 2;
+            /* transform: rotate(120deg);
+            transform: scaleY(2);
+            transform: translate(-20px,-15px);
+        } */ */
+        /* .icon_container:hover #icon_1{
+            color: aquamarine;
+        } */
+
+        /* #icon_1:hover{
+            color: aquamarine;
+        } */
+        #icon_1{
+            font-size: 3.5rem;
+            color: rgb(0, 161, 161);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="icon_container">
+        <span class="material-symbols-outlined" id="icon_1">
+            home
+        </span>
+    </div>
+    
+</body>
+</html>

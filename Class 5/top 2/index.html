@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>card</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card_container{
+            height: 350px;
+            width: 280px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 15PX;
+            filter: drop-shadow(0 0 10px black);
+            cursor: pointer;
+        }
+
+        .icon_container{
+            height: 80px;
+            width: 80px;
+            background-color: rgb(110, 219, 183);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: drop-shadow(0 0 10px black);
+        }
+
+        #star_icon{
+            height: 50px;
+            width: 50px;
+        }
+        h2{
+            font-size: 28px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        p{
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card_container">
+        <div class="icon_container">
+            <img src="./Resource/star icon.svg" alt="star icon" id="star_icon">
+        </div>
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, natus.</p>
+
+    </div>
+</body>
+</html>

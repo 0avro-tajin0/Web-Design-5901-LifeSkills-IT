@@ -1,0 +1,108 @@
+
+
+/* font add  */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+
+
+/* variables */
+:root{
+    --main_font_f: "Fira Code", monospace;
+
+    --main_bg_color:#e5f5fa;
+
+    --transparent_card_bg: rgba(175, 42, 42, 0.075);
+
+    --text_color: rgb(255, 255, 255);
+}
+
+
+/* _____________________________________________ */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main_bg_color);
+    font-family: var(--main_font_f);
+}
+
+/* main card design  */
+.card{
+    height: 415px;
+    width: 300px;
+    border-radius: 15px;
+    border: 5px solid rgb(238, 58, 58);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    background-color: #ec0808;
+}
+
+.card:hover .content_container{
+ top: 0;
+}
+
+.card img{
+    height: 415px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+/* text content design  */
+.content_container{
+    height: 405px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 5px 10px;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    border-radius: 20px;
+    top:100%;
+    background: var(--transparent_card_bg);
+
+    transition: all 2.5s;
+}
+
+.icon{
+    height: 80px;
+    width: 80px;
+    background-color: #f13f3f82;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.icon span{
+    font-size: 3.5rem;
+    color: #08ddec;
+}
+
+.content_container h2{
+    font-size: 1.8rem;
+    color: var(--text_color);
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+.content_container p{
+    font-size: 1rem;
+    color: var(--text_color);
+    /* text-wrap: wrap; */
+    text-align: center;
+}
